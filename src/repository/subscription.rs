@@ -10,7 +10,7 @@ impl MongoRepo {
             id: None,
             email: new_subscription.email,
             name: new_subscription.name,
-            subscribed_at: Option::Some(datetime.to_string()),
+            subscribed_at: Some(datetime.to_string()),
         };
         let subscription = self
             .sub
